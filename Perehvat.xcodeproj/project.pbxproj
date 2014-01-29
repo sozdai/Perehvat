@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		05CEE2807A194986BF2CB452 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A5C849B2C74B2AAC8109D7 /* libPods.a */; };
-		8406230E18995C2B00F2CC5D /* image.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8406230D18995C2B00F2CC5D /* image.JPG */; };
-		8406231018995E0800F2CC5D /* image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8406230F18995E0800F2CC5D /* image.jpeg */; };
 		84951E141897FCAD0070BF88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84951E131897FCAD0070BF88 /* Foundation.framework */; };
 		84951E161897FCAD0070BF88 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84951E151897FCAD0070BF88 /* CoreGraphics.framework */; };
 		84951E181897FCAD0070BF88 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84951E171897FCAD0070BF88 /* UIKit.framework */; };
@@ -42,8 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8406230D18995C2B00F2CC5D /* image.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image.JPG; path = ../../Downloads/image.JPG; sourceTree = "<group>"; };
-		8406230F18995E0800F2CC5D /* image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image.jpeg; path = ../../Downloads/image.jpeg; sourceTree = "<group>"; };
 		84951E101897FCAD0070BF88 /* Perehvat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Perehvat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84951E131897FCAD0070BF88 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		84951E151897FCAD0070BF88 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -104,8 +100,6 @@
 		84951E071897FCAD0070BF88 = {
 			isa = PBXGroup;
 			children = (
-				8406230F18995E0800F2CC5D /* image.jpeg */,
-				8406230D18995C2B00F2CC5D /* image.JPG */,
 				84951E561898E4270070BF88 /* RightViewController.h */,
 				84951E571898E4270070BF88 /* RightViewController.m */,
 				84951E531898E40A0070BF88 /* LeftViewCell.h */,
@@ -271,8 +265,6 @@
 			files = (
 				84951E2C1897FCAD0070BF88 /* Images.xcassets in Resources */,
 				84951E1E1897FCAD0070BF88 /* InfoPlist.strings in Resources */,
-				8406230E18995C2B00F2CC5D /* image.JPG in Resources */,
-				8406231018995E0800F2CC5D /* image.jpeg in Resources */,
 				84951E491897FCC50070BF88 /* Podfile in Resources */,
 				84951E271897FCAD0070BF88 /* Main.storyboard in Resources */,
 			);
