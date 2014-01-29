@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05CEE2807A194986BF2CB452 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A5C849B2C74B2AAC8109D7 /* libPods.a */; };
+		8406230E18995C2B00F2CC5D /* image.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8406230D18995C2B00F2CC5D /* image.JPG */; };
+		8406231018995E0800F2CC5D /* image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8406230F18995E0800F2CC5D /* image.jpeg */; };
 		84951E141897FCAD0070BF88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84951E131897FCAD0070BF88 /* Foundation.framework */; };
 		84951E161897FCAD0070BF88 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84951E151897FCAD0070BF88 /* CoreGraphics.framework */; };
 		84951E181897FCAD0070BF88 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84951E171897FCAD0070BF88 /* UIKit.framework */; };
@@ -14,13 +17,18 @@
 		84951E201897FCAD0070BF88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84951E1F1897FCAD0070BF88 /* main.m */; };
 		84951E241897FCAD0070BF88 /* PerehvatAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84951E231897FCAD0070BF88 /* PerehvatAppDelegate.m */; };
 		84951E271897FCAD0070BF88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84951E251897FCAD0070BF88 /* Main.storyboard */; };
-		84951E2A1897FCAD0070BF88 /* PerehvatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84951E291897FCAD0070BF88 /* PerehvatViewController.m */; };
 		84951E2C1897FCAD0070BF88 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84951E2B1897FCAD0070BF88 /* Images.xcassets */; };
 		84951E331897FCAD0070BF88 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84951E321897FCAD0070BF88 /* XCTest.framework */; };
 		84951E341897FCAD0070BF88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84951E131897FCAD0070BF88 /* Foundation.framework */; };
 		84951E351897FCAD0070BF88 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84951E171897FCAD0070BF88 /* UIKit.framework */; };
 		84951E3D1897FCAD0070BF88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84951E3B1897FCAD0070BF88 /* InfoPlist.strings */; };
 		84951E3F1897FCAD0070BF88 /* PerehvatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84951E3E1897FCAD0070BF88 /* PerehvatTests.m */; };
+		84951E491897FCC50070BF88 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 84951E481897FCC50070BF88 /* Podfile */; };
+		84951E4C1897FF860070BF88 /* SidePanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84951E4B1897FF860070BF88 /* SidePanelViewController.m */; };
+		84951E4F1898E3B00070BF88 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84951E4E1898E3B00070BF88 /* CenterViewController.m */; };
+		84951E521898E3DA0070BF88 /* LeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84951E511898E3DA0070BF88 /* LeftTableViewController.m */; };
+		84951E551898E40A0070BF88 /* LeftViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84951E541898E40A0070BF88 /* LeftViewCell.m */; };
+		84951E581898E4270070BF88 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84951E571898E4270070BF88 /* RightViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8406230D18995C2B00F2CC5D /* image.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image.JPG; path = ../../Downloads/image.JPG; sourceTree = "<group>"; };
+		8406230F18995E0800F2CC5D /* image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image.jpeg; path = ../../Downloads/image.jpeg; sourceTree = "<group>"; };
 		84951E101897FCAD0070BF88 /* Perehvat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Perehvat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84951E131897FCAD0070BF88 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		84951E151897FCAD0070BF88 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +55,25 @@
 		84951E221897FCAD0070BF88 /* PerehvatAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PerehvatAppDelegate.h; sourceTree = "<group>"; };
 		84951E231897FCAD0070BF88 /* PerehvatAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerehvatAppDelegate.m; sourceTree = "<group>"; };
 		84951E261897FCAD0070BF88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		84951E281897FCAD0070BF88 /* PerehvatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PerehvatViewController.h; sourceTree = "<group>"; };
-		84951E291897FCAD0070BF88 /* PerehvatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerehvatViewController.m; sourceTree = "<group>"; };
 		84951E2B1897FCAD0070BF88 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		84951E311897FCAD0070BF88 /* PerehvatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerehvatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84951E321897FCAD0070BF88 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		84951E3A1897FCAD0070BF88 /* PerehvatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PerehvatTests-Info.plist"; sourceTree = "<group>"; };
 		84951E3C1897FCAD0070BF88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84951E3E1897FCAD0070BF88 /* PerehvatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerehvatTests.m; sourceTree = "<group>"; };
+		84951E481897FCC50070BF88 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		84951E4A1897FF860070BF88 /* SidePanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidePanelViewController.h; sourceTree = "<group>"; };
+		84951E4B1897FF860070BF88 /* SidePanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidePanelViewController.m; sourceTree = "<group>"; };
+		84951E4D1898E3B00070BF88 /* CenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterViewController.h; sourceTree = "<group>"; };
+		84951E4E1898E3B00070BF88 /* CenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterViewController.m; sourceTree = "<group>"; };
+		84951E501898E3DA0070BF88 /* LeftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftTableViewController.h; sourceTree = "<group>"; };
+		84951E511898E3DA0070BF88 /* LeftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftTableViewController.m; sourceTree = "<group>"; };
+		84951E531898E40A0070BF88 /* LeftViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewCell.h; sourceTree = "<group>"; };
+		84951E541898E40A0070BF88 /* LeftViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewCell.m; sourceTree = "<group>"; };
+		84951E561898E4270070BF88 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
+		84951E571898E4270070BF88 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
+		9B856446377240D0BDAF0B11 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D5A5C849B2C74B2AAC8109D7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +84,7 @@
 				84951E161897FCAD0070BF88 /* CoreGraphics.framework in Frameworks */,
 				84951E181897FCAD0070BF88 /* UIKit.framework in Frameworks */,
 				84951E141897FCAD0070BF88 /* Foundation.framework in Frameworks */,
+				05CEE2807A194986BF2CB452 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,10 +104,24 @@
 		84951E071897FCAD0070BF88 = {
 			isa = PBXGroup;
 			children = (
+				8406230F18995E0800F2CC5D /* image.jpeg */,
+				8406230D18995C2B00F2CC5D /* image.JPG */,
+				84951E561898E4270070BF88 /* RightViewController.h */,
+				84951E571898E4270070BF88 /* RightViewController.m */,
+				84951E531898E40A0070BF88 /* LeftViewCell.h */,
+				84951E541898E40A0070BF88 /* LeftViewCell.m */,
+				84951E501898E3DA0070BF88 /* LeftTableViewController.h */,
+				84951E511898E3DA0070BF88 /* LeftTableViewController.m */,
+				84951E4D1898E3B00070BF88 /* CenterViewController.h */,
+				84951E4E1898E3B00070BF88 /* CenterViewController.m */,
+				84951E4A1897FF860070BF88 /* SidePanelViewController.h */,
+				84951E4B1897FF860070BF88 /* SidePanelViewController.m */,
+				84951E481897FCC50070BF88 /* Podfile */,
 				84951E191897FCAD0070BF88 /* Perehvat */,
 				84951E381897FCAD0070BF88 /* PerehvatTests */,
 				84951E121897FCAD0070BF88 /* Frameworks */,
 				84951E111897FCAD0070BF88 /* Products */,
+				9B856446377240D0BDAF0B11 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +141,7 @@
 				84951E151897FCAD0070BF88 /* CoreGraphics.framework */,
 				84951E171897FCAD0070BF88 /* UIKit.framework */,
 				84951E321897FCAD0070BF88 /* XCTest.framework */,
+				D5A5C849B2C74B2AAC8109D7 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,8 +152,6 @@
 				84951E221897FCAD0070BF88 /* PerehvatAppDelegate.h */,
 				84951E231897FCAD0070BF88 /* PerehvatAppDelegate.m */,
 				84951E251897FCAD0070BF88 /* Main.storyboard */,
-				84951E281897FCAD0070BF88 /* PerehvatViewController.h */,
-				84951E291897FCAD0070BF88 /* PerehvatViewController.m */,
 				84951E2B1897FCAD0070BF88 /* Images.xcassets */,
 				84951E1A1897FCAD0070BF88 /* Supporting Files */,
 			);
@@ -159,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84951E421897FCAD0070BF88 /* Build configuration list for PBXNativeTarget "Perehvat" */;
 			buildPhases = (
+				A3099A3E952F416E915A9E22 /* Check Pods Manifest.lock */,
 				84951E0C1897FCAD0070BF88 /* Sources */,
 				84951E0D1897FCAD0070BF88 /* Frameworks */,
 				84951E0E1897FCAD0070BF88 /* Resources */,
+				3569BBCB3E2A4E5CAB18BDA1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,6 +237,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Alex Kardash";
 				TargetAttributes = {
+					84951E0F1897FCAD0070BF88 = {
+						DevelopmentTeam = TE7YE2BF9Z;
+					};
 					84951E301897FCAD0070BF88 = {
 						TestTargetID = 84951E0F1897FCAD0070BF88;
 					};
@@ -231,6 +271,9 @@
 			files = (
 				84951E2C1897FCAD0070BF88 /* Images.xcassets in Resources */,
 				84951E1E1897FCAD0070BF88 /* InfoPlist.strings in Resources */,
+				8406230E18995C2B00F2CC5D /* image.JPG in Resources */,
+				8406231018995E0800F2CC5D /* image.jpeg in Resources */,
+				84951E491897FCC50070BF88 /* Podfile in Resources */,
 				84951E271897FCAD0070BF88 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,14 +288,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3569BBCB3E2A4E5CAB18BDA1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3099A3E952F416E915A9E22 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84951E0C1897FCAD0070BF88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84951E581898E4270070BF88 /* RightViewController.m in Sources */,
+				84951E4C1897FF860070BF88 /* SidePanelViewController.m in Sources */,
+				84951E551898E40A0070BF88 /* LeftViewCell.m in Sources */,
+				84951E521898E3DA0070BF88 /* LeftTableViewController.m in Sources */,
+				84951E4F1898E3B00070BF88 /* CenterViewController.m in Sources */,
 				84951E201897FCAD0070BF88 /* main.m in Sources */,
 				84951E241897FCAD0070BF88 /* PerehvatAppDelegate.m in Sources */,
-				84951E2A1897FCAD0070BF88 /* PerehvatViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,26 +456,34 @@
 		};
 		84951E431897FCAD0070BF88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B856446377240D0BDAF0B11 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Perehvat/Perehvat-Prefix.pch";
 				INFOPLIST_FILE = "Perehvat/Perehvat-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		84951E441897FCAD0070BF88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B856446377240D0BDAF0B11 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Perehvat/Perehvat-Prefix.pch";
 				INFOPLIST_FILE = "Perehvat/Perehvat-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -461,6 +549,7 @@
 				84951E441897FCAD0070BF88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84951E451897FCAD0070BF88 /* Build configuration list for PBXNativeTarget "PerehvatTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +558,7 @@
 				84951E471897FCAD0070BF88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
