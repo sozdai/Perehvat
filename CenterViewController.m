@@ -26,6 +26,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _violations = @[@"Перехват", @"Автохлам", @"Вокзал",
+                    @"Светофор", @"Стакан", @"Стоп-Вандал", @"Утеря"];
+    _violationDescriptions = @[@"информации, не предусмотренной ни одной из предложенных операций",
+                               @"оставленные, неэксплуатируемых транспортных средствах",
+                               @"происшествия на объектах транспортной системы",
+                               @"неработающие светофоры и поломанные дорожные знаки",
+                               @"распития спиртных напитков в неустановленных местах",
+                               @"все виды вандализма",
+                               @"найденные/потерянные вещи, пропавшие без вести и т.д."];
 }
 
 - (void)didReceiveMemoryWarning
@@ -77,6 +86,7 @@
     if ([mediaType isEqualToString:(NSString *)kUTTypeImage]) {
         UIImage *image = info[UIImagePickerControllerOriginalImage];
         _imageView.image = image;
+        _imageView.backgroundColor = [UIColor whiteColor];
     if (_newMedia)
             UIImageWriteToSavedPhotosAlbum(image,
                                            self,
@@ -131,6 +141,38 @@ finishedSavingWithError:(NSError *)error
         [_commentTextField resignFirstResponder];
     }
     [super touchesBegan:touches withEvent:event];
+}
+
+#pragma mark -
+#pragma mark PickerView DataSource
+
+- (NSInteger)numberOfComponentsInPickerView:
+(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView
+numberOfRowsInComponent:(NSInteger)component
+{
+    return _violations.count;
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView
+             titleForRow:(NSInteger)row
+            forComponent:(NSInteger)component
+{
+    return _violations[row];
+} 
+
+#pragma mark -
+#pragma mark PickerView Delegate
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row
+      inComponent:(NSInteger)component
+{
+    NSString *resultString = [[NSString alloc] initWithFormat: @"%@", _violationDescriptions[row]];
+    _violationsTextView.text = resultString;
+    [_violationsTextView setFont:[UIFont systemFontOfSize:15]];
 }
 
 @end

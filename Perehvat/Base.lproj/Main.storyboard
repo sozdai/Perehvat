@@ -274,6 +274,13 @@
                                     <action selector="textFieldReturn:" destination="Hst-ce-y6f" eventType="editingDidEndOnExit" id="jNG-85-Aza"/>
                                 </connections>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="информации, не предусмотренной ни одной из предложенных операций" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20b-Fr-pwr">
+                                <rect key="frame" x="20" y="198" width="144" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qSe-QZ-FiF">
                                 <rect key="frame" x="20" y="198" width="144" height="195"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -301,8 +308,12 @@
                                 </items>
                             </toolbar>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pp8-2M-oP8">
-                                <rect key="frame" x="172" y="215" width="128" height="162"/>
+                                <rect key="frame" x="172" y="173" width="128" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Hst-ce-y6f" id="GJg-GQ-bLD"/>
+                                    <outlet property="delegate" destination="Hst-ce-y6f" id="mS4-CJ-yAm"/>
+                                </connections>
                             </pickerView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Нарушение" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayq-i4-GcA">
                                 <rect key="frame" x="172" y="198" width="128" height="21"/>
@@ -310,6 +321,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ebx-cU-I0X">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="camera" id="keX-Em-wvm">
+                                        <connections>
+                                            <action selector="useCamera:" destination="Hst-ce-y6f" id="Pce-a3-9wA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="add" id="Y16-XX-cla">
+                                        <connections>
+                                            <action selector="useCameraRoll:" destination="Hst-ce-y6f" id="xan-Vj-hXv"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="B6g-WA-R1q"/>
+                                    <barButtonItem title="Отправить" id="Vge-PW-Waa">
+                                        <connections>
+                                            <action selector="save:" destination="Hst-ce-y6f" id="iiU-gl-GXZ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                         <constraints>
@@ -335,7 +368,9 @@
                         <outlet property="commentTextField" destination="4rV-sG-zIV" id="zFo-bo-inW"/>
                         <outlet property="imageView" destination="qSe-QZ-FiF" id="iOw-Ur-yr8"/>
                         <outlet property="nameTextField" destination="Ugc-oN-bCq" id="2a8-mi-jhy"/>
+                        <outlet property="picker" destination="Pp8-2M-oP8" id="iAc-BM-I1A"/>
                         <outlet property="sendButton" destination="RGZ-EN-Yvu" id="qJM-SZ-dea"/>
+                        <outlet property="violationsTextView" destination="20b-Fr-pwr" id="FTz-ly-ZLF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z3G-bS-6TF" userLabel="First Responder" sceneMemberID="firstResponder"/>
