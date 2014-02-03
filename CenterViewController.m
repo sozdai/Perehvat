@@ -26,15 +26,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _violations = @[@"Перехват", @"Автохлам", @"Вокзал",
-                    @"Светофор", @"Стакан", @"Стоп-Вандал", @"Утеря"];
-    _violationDescriptions = @[@"информации, не предусмотренной ни одной из предложенных операций",
-                               @"оставленные, неэксплуатируемых транспортных средствах",
+    _violations = @[@"Автохлам", @"Вокзал",
+                    @"Светофор", @"Перехват", @"Стакан", @"Стоп-Вандал", @"Утеря"];
+    _violationDescriptions = @[@"оставленные, неэксплуатируемых транспортных средствах",
                                @"происшествия на объектах транспортной системы",
                                @"неработающие светофоры и поломанные дорожные знаки",
+                               @"информации, не предусмотренной ни одной из предложенных операций",
                                @"распития спиртных напитков в неустановленных местах",
                                @"все виды вандализма",
                                @"найденные/потерянные вещи, пропавшие без вести и т.д."];
+    [self.picker selectRow:3 inComponent:0 animated:NO];
+    [self pickerView:_picker didSelectRow:3 inComponent:0];
+    _deleteImageButton.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.75];
+    _deleteImageButton.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -77,6 +81,12 @@
     }
 }
 
+- (IBAction)deleteImage:(id)sender {
+    _imageView.image = nil;
+    _deleteImageButton.hidden = YES;
+    [self pickerView:_picker didSelectRow:[_picker selectedRowInComponent:0] inComponent:0];
+}
+
 #pragma mark -
 #pragma mark UIImagePickerControllerDelegate
 
@@ -86,7 +96,9 @@
     if ([mediaType isEqualToString:(NSString *)kUTTypeImage]) {
         UIImage *image = info[UIImagePickerControllerOriginalImage];
         _imageView.image = image;
-        _imageView.backgroundColor = [UIColor whiteColor];
+        _violationsTextView.text = nil;
+        _deleteImageButton.hidden = NO;
+        
     if (_newMedia)
             UIImageWriteToSavedPhotosAlbum(image,
                                            self,
@@ -127,6 +139,7 @@ finishedSavingWithError:(NSError *)error
 
 }
 
+//hide keyboard
 -(IBAction)textFieldReturn:(id)sender{
     [sender resignFirstResponder];
 }
@@ -170,9 +183,12 @@ numberOfRowsInComponent:(NSInteger)component
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row
       inComponent:(NSInteger)component
 {
-    NSString *resultString = [[NSString alloc] initWithFormat: @"%@", _violationDescriptions[row]];
-    _violationsTextView.text = resultString;
-    [_violationsTextView setFont:[UIFont systemFontOfSize:15]];
+    if (_imageView.image == nil) {
+        NSString *resultString = [[NSString alloc] initWithFormat: @"%@", _violationDescriptions[row]];
+        _violationsTextView.text = resultString;
+        [_violationsTextView setFont:[UIFont systemFontOfSize:15]];
+    }
+    
 }
 
 @end

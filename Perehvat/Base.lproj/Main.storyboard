@@ -274,15 +274,22 @@
                                     <action selector="textFieldReturn:" destination="Hst-ce-y6f" eventType="editingDidEndOnExit" id="jNG-85-Aza"/>
                                 </connections>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="информации, не предусмотренной ни одной из предложенных операций" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20b-Fr-pwr">
-                                <rect key="frame" x="20" y="198" width="144" height="195"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20b-Fr-pwr">
+                                <rect key="frame" x="156" y="198" width="144" height="195"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="информации, не предусмотренной ни одной из предложенных операций">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qSe-QZ-FiF">
-                                <rect key="frame" x="20" y="198" width="144" height="195"/>
+                                <rect key="frame" x="156" y="198" width="144" height="195"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w0y-Ce-3mr">
@@ -308,34 +315,29 @@
                                 </items>
                             </toolbar>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pp8-2M-oP8">
-                                <rect key="frame" x="172" y="173" width="128" height="162"/>
+                                <rect key="frame" x="20" y="189" width="128" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96862745100000003" green="0.34362554560774539" blue="0.30814425635048631" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Hst-ce-y6f" id="GJg-GQ-bLD"/>
                                     <outlet property="delegate" destination="Hst-ce-y6f" id="mS4-CJ-yAm"/>
                                 </connections>
                             </pickerView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Нарушение" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayq-i4-GcA">
-                                <rect key="frame" x="172" y="198" width="128" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ebx-cU-I0X">
                                 <rect key="frame" x="0.0" y="436" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem systemItem="camera" id="keX-Em-wvm">
-                                        <connections>
-                                            <action selector="useCamera:" destination="Hst-ce-y6f" id="Pce-a3-9wA"/>
-                                        </connections>
-                                    </barButtonItem>
                                     <barButtonItem systemItem="add" id="Y16-XX-cla">
                                         <connections>
                                             <action selector="useCameraRoll:" destination="Hst-ce-y6f" id="xan-Vj-hXv"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="B6g-WA-R1q"/>
+                                    <barButtonItem systemItem="camera" id="keX-Em-wvm">
+                                        <connections>
+                                            <action selector="useCamera:" destination="Hst-ce-y6f" id="Pce-a3-9wA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="5Lq-YV-lnh"/>
                                     <barButtonItem title="Отправить" id="Vge-PW-Waa">
                                         <connections>
                                             <action selector="save:" destination="Hst-ce-y6f" id="iiU-gl-GXZ"/>
@@ -343,6 +345,14 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ku2-pT-VVX">
+                                <rect key="frame" x="156" y="281" width="144" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Удалить"/>
+                                <connections>
+                                    <action selector="deleteImage:" destination="Hst-ce-y6f" eventType="touchUpInside" id="yyr-zX-Xy7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                         <constraints>
@@ -366,6 +376,7 @@
                     <connections>
                         <outlet property="addressTextField" destination="nDg-R5-hhJ" id="DH9-m2-7SX"/>
                         <outlet property="commentTextField" destination="4rV-sG-zIV" id="zFo-bo-inW"/>
+                        <outlet property="deleteImageButton" destination="ku2-pT-VVX" id="Wo1-VZ-uSn"/>
                         <outlet property="imageView" destination="qSe-QZ-FiF" id="iOw-Ur-yr8"/>
                         <outlet property="nameTextField" destination="Ugc-oN-bCq" id="2a8-mi-jhy"/>
                         <outlet property="picker" destination="Pp8-2M-oP8" id="iAc-BM-I1A"/>

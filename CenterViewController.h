@@ -26,6 +26,8 @@
 //take picture
 - (IBAction)useCamera:(id)sender;
 - (IBAction)useCameraRoll:(id)sender;
+- (IBAction)deleteImage:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *deleteImageButton;
 
 //hide keyboard
 -(IBAction)textFieldReturn:(id)sender;
